@@ -2,13 +2,13 @@ import java.util.*;
 
 class Solution {
     public static int addDigits(int num) {
-        while (num >= 10) {          // keep going until 1 digit is left
+        while (num >= 10) {          
             int sum = 0;
             while (num != 0) {
-                sum += num % 10;     // take last digit
-                num /= 10;           // remove last digit
+                sum += num % 10;     
+                num /= 10;           
             }
-            num = sum;               // the sum becomes the new number
+            num = sum;              
         }
         return num;
     }
